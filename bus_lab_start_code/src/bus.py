@@ -3,7 +3,7 @@ class Bus:
         self.route_number = route_number
         self.destination = destination
         self.passengers = []
-    
+       
     def drive(self):
         return "Brum brum"
 
@@ -18,3 +18,9 @@ class Bus:
 
     def empty(self):
         self.passengers = []
+
+    def pick_up_from_stop(self, bus_stop):
+        for person in bus_stop.queue:
+            if person.destination == self.destination:
+                self.passengers.extend(bus_stop.person)
+                bus_stop.clear(person)
