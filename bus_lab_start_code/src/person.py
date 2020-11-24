@@ -4,5 +4,6 @@ class Person:
         self.age = age
         self.destination = destination
     
-    def travel_to(self, bus_stop):
-        self.destination = bus_stop
+    # def travel_to(self, bus_stop):
+    #     self.destination = bus_stop
+
