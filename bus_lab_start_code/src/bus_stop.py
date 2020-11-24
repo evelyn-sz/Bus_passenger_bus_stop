@@ -14,3 +14,4 @@ class BusStop:
 
     def clear(self):
         self.queue = []
+        # self.queue.clear()
