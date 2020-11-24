@@ -1,6 +1,6 @@
 import unittest
 from src.bus import Bus
-# from src.bus_stop import BusStop
+from src.bus_stop import BusStop
 from src.person import Person
 
 class TestBus(unittest.TestCase):
